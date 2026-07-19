@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join TechAgency. We are hiring developers, designers, and Client Representatives.">
+    <title>Careers | TechAgency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Navbar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <i class="ph-fill ph-hexagon text-primary"></i>
+                TechAgency.
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="careers.html" class="nav-link" style="color: var(--primary);">Careers</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode"><i class="ph ph-moon"></i></button>
+                <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+                <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section section-dark" style="padding-top: 10rem; padding-bottom: 4rem;">
+        <div class="container text-center">
+            <span class="hero-tagline animate-on-scroll">Join Our Team</span>
+            <h1 class="animate-on-scroll" style="font-size: 3.5rem;">Build the Future With Us</h1>
+            <p class="text-secondary animate-on-scroll" style="max-width: 600px; margin: 0 auto;">We are a team of passionate engineers, designers, and strategists. Discover a culture of innovation, continuous learning, and remote-first flexibility.</p>
+        </div>
+    </header>
+
+    <!-- Culture Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="glass-card animate-on-scroll">
+                    <i class="ph ph-globe-hemisphere-west text-primary" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                    <h3>Remote First</h3>
+                    <p class="text-secondary">Work from anywhere in the world. We value output over hours logged.</p>
+                </div>
+                <div class="glass-card animate-on-scroll" style="transition-delay: 100ms">
+                    <i class="ph ph-book-open text-primary" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                    <h3>Continuous Learning</h3>
+                    <p class="text-secondary">Yearly stipend for courses, conferences, and books to keep your skills sharp.</p>
+                </div>
+                <div class="glass-card animate-on-scroll" style="transition-delay: 200ms">
+                    <i class="ph ph-heart text-primary" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                    <h3>Great Benefits</h3>
+                    <p class="text-secondary">Health insurance, generous PTO, equity options, and performance bonuses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlighted Role (BDR/Client Rep) -->
+    <section class="section section-dark" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <div class="glass-card animate-on-scroll" style="border-color: var(--primary); background: linear-gradient(135deg, var(--bg-secondary), rgba(99, 102, 241, 0.05)); padding: 4rem 3rem;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <span class="text-primary font-weight-600" style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">High Priority Hiring</span>
+                        <h2 style="font-size: 2.5rem; margin: 0.5rem 0 1.5rem;">Freelance Client Representative</h2>
+                        <p class="text-secondary" style="margin-bottom: 1rem; font-size: 1.1rem;">Earn massive commissions by connecting us with businesses that need premium software solutions.</p>
+                        <p class="text-secondary" style="margin-bottom: 2rem;">Example: Bring in a ₹50,000 project, you earn <strong>₹10,000 commission</strong> directly.</p>
+                        <ul class="service-features" style="margin-bottom: 2rem;">
+                            <li><i class="ph ph-check text-primary"></i> 100% Remote & Flexible Hours</li>
+                            <li><i class="ph ph-check text-primary"></i> Uncapped Earning Potential</li>
+                            <li><i class="ph ph-check text-primary"></i> No Coding Knowledge Required</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="apply.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem;">Learn More & Apply <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Current Openings</h2>
+                <p class="text-secondary">Find a role that fits your passion and skills.</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <!-- Job Card -->
+                <div class="glass-card animate-on-scroll">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <span class="portfolio-tag">Development</span>
+                        <span class="text-muted" style="font-size: 0.85rem;"><i class="ph ph-map-pin"></i> Remote</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">Full Stack Developer</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Build scalable web applications using Next.js, Node.js, and PostgreSQL.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong style="font-size: 0.9rem;">Requirements:</strong>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>3+ years of experience with React/Next.js</li>
+                            <li>Strong knowledge of REST and GraphQL APIs</li>
+                            <li>Database design (SQL & NoSQL)</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">Apply Now</a>
+                </div>
+
+                <!-- Job Card -->
+                <div class="glass-card animate-on-scroll" style="transition-delay: 100ms">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <span class="portfolio-tag">Design</span>
+                        <span class="text-muted" style="font-size: 0.85rem;"><i class="ph ph-map-pin"></i> Remote</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">UI/UX Designer</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Create premium, modern, and intuitive interfaces for our enterprise clients.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong style="font-size: 0.9rem;">Requirements:</strong>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Expertise in Figma and prototyping</li>
+                            <li>Strong portfolio of modern web apps</li>
+                            <li>Understanding of HTML/CSS capabilities</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">Apply Now</a>
+                </div>
+
+                <!-- Job Card -->
+                <div class="glass-card animate-on-scroll">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <span class="portfolio-tag">AI / Data</span>
+                        <span class="text-muted" style="font-size: 0.85rem;"><i class="ph ph-map-pin"></i> Remote</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">AI Integration Developer</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Integrate LLMs, RAG pipelines, and intelligent agents into SaaS platforms.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong style="font-size: 0.9rem;">Requirements:</strong>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Experience with OpenAI API & LangChain</li>
+                            <li>Python and TypeScript proficiency</li>
+                            <li>Vector database experience (Pinecone, etc.)</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">Apply Now</a>
+                </div>
+
+                <!-- Job Card -->
+                <div class="glass-card animate-on-scroll" style="transition-delay: 100ms">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <span class="portfolio-tag">Sales</span>
+                        <span class="text-muted" style="font-size: 0.85rem;"><i class="ph ph-map-pin"></i> Remote</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">Business Development Intern</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 1.5rem;">Learn B2B sales and lead generation in the fast-paced software industry.</p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong style="font-size: 0.9rem;">Requirements:</strong>
+                        <ul style="font-size: 0.85rem; color: var(--text-secondary); list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Excellent communication skills</li>
+                            <li>Willingness to learn cold outreach</li>
+                            <li>Passion for technology</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechAgency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

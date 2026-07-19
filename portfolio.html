@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our premium portfolio of software development projects.">
+    <title>Portfolio | TechAgency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .filter-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-body);
+            font-weight: 500;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        .filters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .project-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <i class="ph-fill ph-hexagon text-primary"></i>
+                TechAgency.
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link" style="color: var(--primary);">Portfolio</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="ph ph-moon"></i></button>
+                <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section section-dark" style="padding-top: 10rem; padding-bottom: 4rem;">
+        <div class="container text-center">
+            <span class="hero-tagline animate-on-scroll">Our Work</span>
+            <h1 class="animate-on-scroll" style="font-size: 3.5rem;">Explore Our <span class="text-gradient">Portfolio</span></h1>
+            <p class="text-secondary animate-on-scroll" style="max-width: 600px; margin: 0 auto;">Discover how we've helped businesses across various industries scale with premium software solutions.</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Gallery -->
+    <section class="section section-light">
+        <div class="container">
+            
+            <div class="filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+
+            <div class="grid grid-2" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card animate-on-scroll" data-category="ai business">
+                    <img src="assets/fintech_dashboard_1784445591720.png" alt="FinTech AI Analytics" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">AI</span>
+                            <span class="portfolio-tag">Next.js</span>
+                            <span class="portfolio-tag">Python</span>
+                        </div>
+                        <h3>FinTech AI Analytics</h3>
+                        <p class="text-secondary" style="margin-bottom: 1.5rem;">A comprehensive financial dashboard that uses machine learning to predict market trends and automate trading strategies.</p>
+                        
+                        <div class="project-details">
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Duration</span>
+                                <span style="font-size: 0.9rem; font-weight: 500;">4 Months</span>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-outline" style="padding: 0.5rem; border-radius: 50%;"><i class="ph ph-github-logo"></i></a>
+                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card animate-on-scroll" data-category="ecommerce">
+                    <img src="assets/ecommerce_store_1784445615462.png" alt="Luxe Global Store" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">E-commerce</span>
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">Node.js</span>
+                        </div>
+                        <h3>Luxe Global Store</h3>
+                        <p class="text-secondary" style="margin-bottom: 1.5rem;">A headless e-commerce platform for a luxury brand featuring sub-second load times and immersive 3D product previews.</p>
+                        
+                        <div class="project-details">
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Duration</span>
+                                <span style="font-size: 0.9rem; font-weight: 500;">3 Months</span>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card animate-on-scroll" data-category="healthcare ai">
+                    <img src="assets/healthcare_portal_1784445627714.png" alt="MediSync Patient Portal" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Healthcare</span>
+                            <span class="portfolio-tag">AI</span>
+                        </div>
+                        <h3>MediSync Patient Portal</h3>
+                        <p class="text-secondary" style="margin-bottom: 1.5rem;">HIPAA-compliant patient management system with an integrated AI symptom checker and telemedicine video calling.</p>
+                        
+                        <div class="project-details">
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Duration</span>
+                                <span style="font-size: 0.9rem; font-weight: 500;">6 Months</span>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-card animate-on-scroll" data-category="education">
+                    <img src="assets/education_lms_1784445642779.png" alt="LearnHub LMS" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Education</span>
+                            <span class="portfolio-tag">AWS</span>
+                        </div>
+                        <h3>LearnHub LMS</h3>
+                        <p class="text-secondary" style="margin-bottom: 1.5rem;">A scalable Learning Management System supporting 100k+ concurrent users with real-time video streaming and quizzes.</p>
+                        
+                        <div class="project-details">
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Duration</span>
+                                <span style="font-size: 0.9rem; font-weight: 500;">5 Months</span>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechAgency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Portfolio Filtering Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active to clicked
+                    btn.classList.add('active');
+                    
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    portfolioCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.getAttribute('data-category').includes(filterValue)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

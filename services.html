@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive software development services.">
+    <title>Services | TechAgency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .service-detail-card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 4rem;
+            padding: 3rem;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+        }
+        @media (min-width: 768px) {
+            .service-detail-card {
+                flex-direction: row;
+                align-items: center;
+            }
+            .service-detail-card:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+        .service-info {
+            flex: 1;
+        }
+        .service-meta {
+            flex: 1;
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+        }
+        .meta-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .meta-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <i class="ph-fill ph-hexagon text-primary"></i>
+                TechAgency.
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link" style="color: var(--primary);">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="ph ph-moon"></i></button>
+                <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section section-dark" style="padding-top: 10rem; padding-bottom: 4rem;">
+        <div class="container text-center">
+            <span class="hero-tagline animate-on-scroll">Our Services</span>
+            <h1 class="animate-on-scroll" style="font-size: 3.5rem;">Comprehensive <span class="text-gradient">Solutions</span></h1>
+            <p class="text-secondary animate-on-scroll" style="max-width: 600px; margin: 0 auto;">From conceptualization to deployment, we provide end-to-end software development services tailored to your business needs.</p>
+        </div>
+    </header>
+
+    <!-- Services Details -->
+    <section class="section section-light">
+        <div class="container">
+            
+            <!-- Service 1 -->
+            <div class="service-detail-card animate-on-scroll">
+                <div class="service-info">
+                    <h2 style="margin-bottom: 1rem;">SaaS Application Development</h2>
+                    <p class="text-secondary" style="margin-bottom: 1.5rem; font-size: 1.1rem;">We build scalable, multi-tenant Software-as-a-Service platforms. Whether you are a startup building an MVP or an enterprise scaling to millions of users, our cloud-native architecture ensures reliability and performance.</p>
+                    <ul class="service-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="ph ph-check-circle text-primary"></i> Multi-tenant Database Design</li>
+                        <li><i class="ph ph-check-circle text-primary"></i> Stripe/Paddle Subscription Integration</li>
+                        <li><i class="ph ph-check-circle text-primary"></i> Real-time Analytics Dashboard</li>
+                    </ul>
+                </div>
+                <div class="service-meta">
+                    <div class="meta-item">
+                        <i class="ph ph-stack"></i>
+                        <div>
+                            <strong>Tech Stack:</strong><br>
+                            <span class="text-secondary">Next.js, Node.js, PostgreSQL, AWS, Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ph ph-clock"></i>
+                        <div>
+                            <strong>Timeline:</strong><br>
+                            <span class="text-secondary">8 - 16 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ph ph-currency-dollar"></i>
+                        <div>
+                            <strong>Starting Cost:</strong><br>
+                            <span class="text-secondary">$15,000+</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Proposal</a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail-card animate-on-scroll">
+                <div class="service-info">
+                    <h2 style="margin-bottom: 1rem;">AI Integration & Development</h2>
+                    <p class="text-secondary" style="margin-bottom: 1.5rem; font-size: 1.1rem;">Leverage the power of Large Language Models (LLMs) and custom machine learning to automate workflows, analyze data, and build intelligent chatbots for your business.</p>
+                    <ul class="service-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="ph ph-check-circle text-primary"></i> Custom ChatGPT-style bots</li>
+                        <li><i class="ph ph-check-circle text-primary"></i> RAG (Retrieval-Augmented Generation)</li>
+                        <li><i class="ph ph-check-circle text-primary"></i> Predictive Analytics Models</li>
+                    </ul>
+                </div>
+                <div class="service-meta">
+                    <div class="meta-item">
+                        <i class="ph ph-stack"></i>
+                        <div>
+                            <strong>Tech Stack:</strong><br>
+                            <span class="text-secondary">Python, LangChain, OpenAI API, Pinecone, FastAPI</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ph ph-clock"></i>
+                        <div>
+                            <strong>Timeline:</strong><br>
+                            <span class="text-secondary">4 - 8 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ph ph-currency-dollar"></i>
+                        <div>
+                            <strong>Starting Cost:</strong><br>
+                            <span class="text-secondary">$5,000+</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Proposal</a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail-card animate-on-scroll">
+                <div class="service-info">
+                    <h2 style="margin-bottom: 1rem;">High-Performance Business Websites</h2>
+                    <p class="text-secondary" style="margin-bottom: 1.5rem; font-size: 1.1rem;">We don't use slow page builders. We code custom, lightning-fast websites that rank higher on Google and convert visitors into leads using modern UI/UX principles.</p>
+                    <ul class="service-features" style="margin-bottom: 1.5rem;">
+                        <li><i class="ph ph-check-circle text-primary"></i> Flawless Mobile Responsiveness</li>
+                        <li><i class="ph ph-check-circle text-primary"></i> Headless CMS (Sanity / Contentful)</li>
+                        <li><i class="ph ph-check-circle text-primary"></i> Technical SEO Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-meta">
+                    <div class="meta-item">
+                        <i class="ph ph-stack"></i>
+                        <div>
+                            <strong>Tech Stack:</strong><br>
+                            <span class="text-secondary">React, Next.js, Framer Motion, Vercel</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ph ph-clock"></i>
+                        <div>
+                            <strong>Timeline:</strong><br>
+                            <span class="text-secondary">2 - 6 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <i class="ph ph-currency-dollar"></i>
+                        <div>
+                            <strong>Starting Cost:</strong><br>
+                            <span class="text-secondary">$2,500+</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Proposal</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechAgency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

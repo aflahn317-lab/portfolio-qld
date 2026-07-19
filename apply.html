@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Become a Client Representative at TechAgency and earn high commissions.">
+    <title>Client Representative | TechAgency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <i class="ph-fill ph-hexagon text-primary"></i>
+                TechAgency.
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="careers.html" class="nav-link" style="color: var(--primary);">Careers</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="ph ph-moon"></i></button>
+                <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section section-dark" style="padding-top: 10rem; padding-bottom: 4rem;">
+        <div class="container text-center">
+            <h1 class="animate-on-scroll">Become a <span class="text-gradient">Client Representative</span></h1>
+            <p class="text-secondary animate-on-scroll" style="max-width: 700px; margin: 0 auto;">Join our network of freelance business development partners. Connect businesses with our premium software services and earn massive commissions.</p>
+        </div>
+    </header>
+
+    <!-- Role Explanation -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div class="animate-on-scroll">
+                    <h2 style="margin-bottom: 1.5rem;">Who is a Client Representative?</h2>
+                    <p class="text-secondary" style="margin-bottom: 1.5rem;">A Client Representative is an independent partner who identifies businesses that need digital transformation—whether it's a new website, a custom SaaS platform, or AI integration.</p>
+                    <p class="text-secondary" style="margin-bottom: 2rem;">You act as the bridge. You find the lead, set up the initial meeting, and understand their high-level requirements. We handle the technical consultation, closing the deal, and writing the code. When they pay, you get paid.</p>
+                    
+                    <div class="glass-card" style="border-color: var(--primary); background: linear-gradient(135deg, var(--bg-secondary), rgba(99, 102, 241, 0.05)); padding: 1.5rem;">
+                        <h4 style="margin-bottom: 0.5rem;"><i class="ph-fill ph-money text-primary"></i> Commission Example</h4>
+                        <p class="text-secondary" style="margin-bottom: 0;">You refer a business for an E-commerce website worth <strong>₹50,000</strong>. You earn a flat 20% commission: <strong>₹10,000</strong> paid directly to you.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-2 animate-on-scroll" style="gap: 1.5rem;">
+                    <div class="glass-card">
+                        <i class="ph-fill ph-target text-primary" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4>Find Clients</h4>
+                        <p class="text-secondary" style="font-size: 0.85rem;">Reach out to local or global businesses needing software.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="ph-fill ph-calendar-plus text-primary" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4>Schedule Meetings</h4>
+                        <p class="text-secondary" style="font-size: 0.85rem;">Coordinate a discovery call with our technical team.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="ph-fill ph-handshake text-primary" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4>Coordinate</h4>
+                        <p class="text-secondary" style="font-size: 0.85rem;">Maintain the relationship and ensure client satisfaction.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="ph-fill ph-trend-up text-primary" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <h4>Grow</h4>
+                        <p class="text-secondary" style="font-size: 0.85rem;">Enjoy performance bonuses and career growth opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="glass-card animate-on-scroll" style="max-width: 700px; margin: 0 auto; padding: 3rem;">
+                <div class="text-center" style="margin-bottom: 2rem;">
+                    <h2>Apply Now</h2>
+                    <p class="text-secondary">Fill out the form below to join our Client Representative program.</p>
+                </div>
+                
+                <form action="#" method="POST">
+                    <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 0;">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 0;">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="+1 234 567 8900">
+                        </div>
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn Profile URL</label>
+                            <input type="url" id="linkedin" class="form-control" placeholder="https://linkedin.com/in/...">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Sales / Business Development Experience</label>
+                        <select id="experience" class="form-control" required>
+                            <option value="">Select your experience level</option>
+                            <option value="none">No experience (Willing to learn)</option>
+                            <option value="1-2">1-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5+">5+ years</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="why">Why should we hire you? *</label>
+                        <textarea id="why" class="form-control" required placeholder="Tell us about your strategy to find clients..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resume">Upload Resume (Optional)</label>
+                        <input type="file" id="resume" class="form-control" style="padding: 0.5rem;">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; justify-content: center;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechAgency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
