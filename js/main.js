@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
   // Initialize Theme
-  if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDark)) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+  if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && prefersDark)) {
+    document.documentElement.setAttribute('data-theme', 'light');
     if(themeToggle) themeToggle.innerHTML = '<i class="ph ph-sun"></i>';
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute('data-theme', 'dark');
     if(themeToggle) themeToggle.innerHTML = '<i class="ph ph-moon"></i>';
   }
 
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
