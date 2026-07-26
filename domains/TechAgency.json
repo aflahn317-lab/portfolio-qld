@@ -1,1 +1,9 @@
-
+{
+    "owner": {
+        "username": "https://github.com/aflahn317",
+        "email": "aflahn317@gmail.com"
+    },
+    "records": {
+        "TXT": "github-verification-string"
+    }
+}
